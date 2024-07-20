@@ -1,0 +1,133 @@
+.content{
+  max-width: 46rem;
+  width: 100%;
+  margin:  0 auto;
+}
+
+.newTaskContainer{
+  display: flex;
+  /* flex: 1; */
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.newTaskContainer input, .newTaskContainer button {
+  transform: translateY(-50%);
+  margin-bottom: 2.3125rem;
+}
+
+.newTaskContainer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 3.25rem;
+  padding: 1rem;
+
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+
+  border: 0;
+  border-radius: 8px;
+  gap: 0.5rem;
+  box-shadow: none;
+
+  line-height: 140%;
+  font-weight: bold;
+  font-size: 0.875rem;
+
+  transition: 0.2s;
+
+}
+
+.newTaskContainer button:hover {
+  background-color: var(--blue);
+}
+
+
+.newTaskContainer input {
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+
+  height: 3.375rem;
+  padding: 1rem;
+  width: 100%;
+  line-height: 140%;
+}
+
+.newTaskContainer input::placeholder {
+  color: var(--gray-300);
+}
+
+.newTaskContainer input:focus {
+  border-color: var(--purple-dark);
+}
+
+.tasksList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tasksList > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.containerEmpty {
+  padding: 4rem 1rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--gray-300);
+}
+
+.containerEmpty p {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerHearderList {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerHearderList aside {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.containerHearderList aside:first-child {
+  color: var(--blue);
+}
+
+.containerHearderList aside:last-child {
+  color: var(--purple);
+}
+
+.containerHearderList aside p {
+  font-size: 0.875rem;
+}
+
+.containerHearderList aside span {
+  padding: 2px 8px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+}
+
+
+
+
