@@ -1,8 +1,10 @@
 
 import { PlusCircle } from '@phosphor-icons/react'
 import { Header } from './components/Header'
+import { Input } from './components/Input'
 import Logo from './assets/Clipboard.svg'
 import styles from './App.module.css'
+import { Button } from './components/Button'
 
 function App() {
 
@@ -11,11 +13,11 @@ function App() {
       <Header />
       <section className={styles.content} >
         <div className={styles.newTaskContainer} >
-          <input className={styles.newTaskContainer} placeholder='Adicione aqui uma nova tarefa' />
-          <button className={styles.newTaskContainer}>
+          <Input />
+          <Button>
             Criar
             <PlusCircle size={16} color='#f2f2f2' weight='bold' />
-          </button>
+          </Button>
         </div>
         <div className={styles.tasksList} >
           <div>
